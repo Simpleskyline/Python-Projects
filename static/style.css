@@ -1,91 +1,46 @@
 body {
-  background: #2c3e50;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  transition: background 0.3s ease;
-}
-
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.theme-toggle button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  background: #34495e;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.theme-toggle button:hover {
-  background: #16a085;
 }
 
 .calculator {
-  background: #1e272e;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   width: 300px;
-  transition: background 0.3s ease;
+  text-align: center;
 }
 
-#display {
-  width: 100%;
-  height: 50px;
-  font-size: 20px;
-  text-align: right;
+.calculator input, .calculator select {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.calculator button {
+  width: 95%;
   padding: 10px;
-  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #306998;
+  color: #fff;
   border: none;
-  margin-bottom: 15px;
-  background: #ecf0f1;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-}
-
-button {
-  padding: 15px;
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  background: #34495e;
-  color: white;
+  border-radius: 4px;
   cursor: pointer;
-  transition: 0.2s;
-} 
-
-button:hover {
-  background: #16a085;
 }
 
-/* Light theme overrides */
-body.light-theme {
-  background: #ecf0f1;
+.calculator button:hover {
+  background-color: #254d73;
 }
 
-body.light-theme .calculator {
-  background: #ffffff;
-  color: #2c3e50;
-}
-
-body.light-theme button {
-  background: #bdc3c7;
-  color: #2c3e50;
-}
-
-body.light-theme button:hover {
-  background: #95a5a6;
+.result {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
 }
