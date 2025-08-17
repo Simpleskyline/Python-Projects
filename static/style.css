@@ -1,0 +1,91 @@
+body {
+  background: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.theme-toggle button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #34495e;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.theme-toggle button:hover {
+  background: #16a085;
+}
+
+.calculator {
+  background: #1e272e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  width: 300px;
+  transition: background 0.3s ease;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  background: #ecf0f1;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #34495e;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #16a085;
+}
+
+/* Light theme overrides */
+body.light-theme {
+  background: #ecf0f1;
+}
+
+body.light-theme .calculator {
+  background: #ffffff;
+  color: #2c3e50;
+}
+
+body.light-theme button {
+  background: #bdc3c7;
+  color: #2c3e50;
+}
+
+body.light-theme button:hover {
+  background: #95a5a6;
+}
