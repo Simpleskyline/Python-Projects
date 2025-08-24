@@ -15,7 +15,10 @@ def multiply(num1, num2):
     return num1 * num2
 
 print("Select operation:")
-print("+", "-", "*", "/")
+print("+ : Addition")
+print("- : Subtraction")
+print("* : Multiplication")
+print("/ : Division")
 
 choice = input("Enter choice (+, -, *, /): ")
 
