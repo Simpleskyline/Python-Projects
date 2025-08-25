@@ -55,7 +55,13 @@ def update(id):
     task = Todo.query.get_or_404(id)
 
     if request.method == 'POST':
-        pass
+        task.content = request.form['content']
+
+        try:
+            db.session.commit()
+            return redirect('/')
+        except:
+            return 'There was an issue updating your task'
     else:
         return render_template('update.html', task=task)
 
