@@ -16,23 +16,32 @@ This project helps you organize, track, and manage your tasks efficiently with a
 ---
 
 ## 📂 Project Structure
-Task-Manager/
-│── app.py # Main Flask app entry point
-│── requirements.txt # Project dependencies
-│── instance/ # SQLite database (auto-created)
-│── templates/ # HTML templates
-│ ├── base.html
-│ ├── index.html
-│ └── add_task.html
-│── static/ # CSS, JS, images
-│ ├── style.css
-│ └── script.js
-│── database.py # DB initialization
-│── routes/ # App routes (activities, goals, reminders, etc.)
 
-yaml
-Copy
-Edit
+Task-Manager/
+
+│── app.py # Main Flask app entry point
+
+│── requirements.txt # Project dependencies
+
+│── instance/ # SQLite database (auto-created)
+
+│── templates/ # HTML templates
+
+│ ├── base.html
+
+│ ├── index.html
+
+│ └── add_task.html
+
+│── static/ # CSS, JS, images
+
+│ ├── style.css
+
+│ └── script.js
+
+│── database.py # DB initialization
+
+│── routes/ # App routes (activities, goals, reminders, etc.)
 
 ---
 
