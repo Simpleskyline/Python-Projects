@@ -1,0 +1,137 @@
+/* ========== GLOBAL RESET & BASE ========== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Centered container */
+.content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 700px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2575fc;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Message for no tasks */
+h4 {
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+}
+
+/* ========== TABLE STYLES ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #2575fc;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Links for actions */
+table a {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+table a[href*="delete"] {
+    background: #ff4d4d;
+    color: white;
+}
+
+table a[href*="delete"]:hover {
+    background: #e60000;
+}
+
+table a[href*="update"] {
+    background: #ffb84d;
+    color: white;
+}
+
+table a[href*="update"]:hover {
+    background: #e69500;
+}
+
+/* ========== FORM STYLES ========== */
+form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #2575fc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+form input[type="text"]:focus {
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 8px rgba(106,17,203,0.3);
+}
+
+form input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #2575fc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
