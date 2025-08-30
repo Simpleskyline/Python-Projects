@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/myprojects.iml" filepath="$PROJECT_DIR$/.idea/myprojects.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/calculator.iml" filepath="$PROJECT_DIR$/.idea/calculator.iml" />
+>>>>>>> repoB-branch
     </modules>
   </component>
 </project>

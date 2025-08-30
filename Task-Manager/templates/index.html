@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block body %}
@@ -32,3 +33,38 @@
     <input type="submit" value="Add Task">
 </form>
 {% endblock %}
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="calculator">
+    <h2>Calculator</h2>
+    <form method="POST">
+      <input type="number" name="num1" placeholder="Number 1" required>
+      <input type="number" name="num2" placeholder="Number 2" required>
+      <select name="operator" required>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="**">Power</option>
+        <option value="%">Modulus</option>
+      </select>
+      <button type="submit">Calculate</button>
+    </form>
+
+    {% if result is not none %}
+      <div class="result">
+        <strong>Result:</strong> {{ result }}
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
+>>>>>>> repoB-branch
